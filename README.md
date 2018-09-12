@@ -16,6 +16,15 @@ Si no se posee un logo personalizado se ha de generar de la siguiente forma:
 1) Generar un fichero ppm (Photoshop o Gimp) de la resolución deseada (la de la pantalla)
 2) Convertir a 224 colores mediante `ppmquant 224 logo_linux_custom.ppm > logo_linux_custom_224.ppm`
 3) Convertir el anterior a ascii mediante `pnmnoraw logo_linux_custom_224.ppm > logo_linux_custom_ascii_224.ppm`
-  
-### 1.4- 
 
+### 1.4- (Opcional) Modificar configuración Wi-Fi
+Si se desea configurar el SSID y clave de la red wifi por defecto es necesario modificar el fichero `board/raspberrypi/files/wpa-supplicant.conf`.
+
+### 1.5- (Opcional) Modificar el programa de ejecución por defecto
+Si se desea configurar programa de inicio por defecto es necesario modificar el fichero `board/raspberrypi/files/S60PPN`.
+### 1.6- Compilar 
+Dentro de la carpeta raiz ejecutar `sudo make` y esperar unas 3h mínimo (sin contar tiempos de descarga).
+### 1.7- Añadir ficheros via ssh 
+Añadir los ficheros necesarios para ejecutar el programa de inicio deseado.
+### 1.8- (Recomendado) Eliminar configuración de red
+Eliminar el fichero `/etc/init.d/S40NET` vía ssh para aumentar velocidad de inicio.
