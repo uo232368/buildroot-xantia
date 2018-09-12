@@ -3,6 +3,10 @@ Distribución linux optimizada para realizar un dashboard digital utilizando una
 
 ## 1.- Recompilar
 En el caso de no disponer de una imagen "sdcard.iso" con la distribución previamente compilada, será necesario realizar el siguiente procedimiento.
+
+__NOTA:__ Recomendable Ubuntu con mínimo 30gb de disco.  
+__NOTA:__ Previamente descargar los "Mandatory packages" listados en 'https://buildroot.org/downloads/manual/manual.html'
+
 ### 1.1- Descargar el repositorio git
   Mediante la orden `git clone https://github.com/uo232368/buildroot-xantia.git`
 ### 1.2- Configurar la distribución
