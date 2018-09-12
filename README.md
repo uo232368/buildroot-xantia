@@ -1,6 +1,8 @@
 # Buildroot-xantia
 Distribución linux optimizada para realizar un dashboard digital utilizando una **raspberry-pi3**.
 
+Imagen precompilada en: https://www41.zippyshare.com/v/GLGMX0s6/file.html
+
 ## 1.- Recompilar
 En el caso de no disponer de una imagen "sdcard.iso" con la distribución previamente compilada, será necesario realizar el siguiente procedimiento.
 
