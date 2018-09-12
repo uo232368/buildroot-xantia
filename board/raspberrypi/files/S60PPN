@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/opt/Qtest2/bin/Qtest2
