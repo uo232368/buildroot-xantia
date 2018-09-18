@@ -30,7 +30,9 @@ Si se desea configurar el SSID y clave de la red wifi por defecto es necesario m
 Si se desea configurar programa de inicio por defecto es necesario modificar el fichero `board/raspberrypi/files/S60PPN`.
 ### 1.6- Compilar 
 Dentro de la carpeta raiz ejecutar `sudo make` y esperar unas 3h mínimo (sin contar tiempos de descarga).
-### 1.7- Añadir ficheros via ssh 
+### 1.7- Ficheros de configuración
+Instalar la imagen `sdcard.img` generada en el paso anterior en una SD y remplazar los ficheros de configuración `cmdline.txt` y `config.txt`.
+### 1.8- Añadir ficheros via ssh 
 Añadir los ficheros necesarios para ejecutar el programa de inicio deseado.
-### 1.8- (Recomendado) Eliminar configuración de red
+### 1.9- (Recomendado) Eliminar configuración de red
 Eliminar el fichero `/etc/init.d/S40NET` vía ssh para aumentar velocidad de inicio.
