@@ -12,15 +12,15 @@ fi
 
 #Mover ficheros de configuracion de Wifi y SSH
 
-cp board/raspberrypi3-64/files/interfaces ${TARGET_DIR}/etc/network/
-cp board/raspberrypi3-64/files/sshd_config ${TARGET_DIR}/etc/ssh/
-cp board/raspberrypi3-64/files/wpa_supplicant.conf ${TARGET_DIR}/etc/
-cp board/raspberrypi3-64/files/S21PPN ${TARGET_DIR}/etc/init.d
+cp board/xantia_pi3/files/interfaces ${TARGET_DIR}/etc/network/
+cp board/xantia_pi3/files/sshd_config ${TARGET_DIR}/etc/ssh/
+cp board/xantia_pi3/files/wpa_supplicant.conf ${TARGET_DIR}/etc/
+cp board/xantia_pi3/files/S21PPN ${TARGET_DIR}/etc/init.d
 
 mkdir -p ${TARGET_DIR}/opt/Qtest2/bin/
-cp board/raspberrypi3-64/files/Qtest2 ${TARGET_DIR}/opt/Qtest2/bin/
+cp board/xantia_pi3/files/Qtest2 ${TARGET_DIR}/opt/Qtest2/bin/
 
-rm -f ${TARGET_DIR}/etc/init.d/S40network
+#rm -f ${TARGET_DIR}/etc/init.d/S40network
 rm -f ${TARGET_DIR}/etc/init.d/S50postgresql 
 
 
